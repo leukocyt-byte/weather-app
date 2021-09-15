@@ -1,13 +1,105 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.app {
+  background-image: url('./components/assets/hot.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.35)
+  );
+  padding: 25px;
+}
+
+.app.cold {
+  background-image: url('./components/assets/cold.jpg');
+}
+
+.search-box {
+  width: 100%;
+  margin: 20px 0 40px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: white;
+  font-size: 58px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.location-box .date {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  color: white;
+  padding: 30px 35px;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 4px 5px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .conditions {
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.button-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-box .button {
+  color: white;
+  background-color: rgb(238, 151, 37);
+  padding: 22px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 26px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
