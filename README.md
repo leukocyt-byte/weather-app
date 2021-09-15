@@ -4,7 +4,7 @@ Weather application in React with OpenWeatherMap API allows you to search for cu
 
 ## API
 
-Store your api key from [https://openweathermap.org/api] in .env.local.
+Store your api key from https://openweathermap.org/api in .env.local.
 
 ### `npm start`
 
